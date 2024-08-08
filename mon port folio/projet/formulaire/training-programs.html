@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme De Formation</title>
+
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(maison\ intelligente.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header,
+        main,
+        footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /*style de l'en-tete*/
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        /*styles du diaporama*/
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* styles des options de formation*/
+        .training-options {
+            margin-top: 40px;
+        }
+
+        .training-options h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .training-options ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .training-options li {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .training-options h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .training-options p {
+            margin-bottom: 20px;
+        }
+
+        .training-options .btn {
+            display: inline-block;
+            background-color: black;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .training-options.btn:hover {
+            background-color: black;
+        }
+
+        /* style du formulaire d'inscription*/
+        .registration-form {
+            margin-top: 40px;
+        }
+
+        .registration-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .registration-form form {
+            background-color: #f5f5f5;
+            padding: bold;
+            border-radius: 5px;
+        }
+
+        .registration-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .registration-form input .registration-form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .registration-form button {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .registration-form button:hover {
+            background-color: #555;
+        }
+
+        /*style de pied de page*/
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nos Programme De Formation Chez MC-DO entreprise..</h1>
+    </header>
+    <main>
+        <section class="training-options">
+            <h2>Choisissez Votre Formation</h2>
+            <u1>
+                <li>
+                    <h3>Developpement Web</h3>
+                    <img src="dev web.jpg" alt="formation">
+                    <p>
+                    <h4>Apprenez les Bases De La Programmation Web Avec HTML , CSS et JAVASCRIPT...</h4>
+                    </p>
+                    <a href="#" class="btn">S'inscrire</a>
+                </li>
+                <li>
+                    <h3>Analyse de Donnees</h3>
+                    <img src="doni.jpg" alt="suite">
+                    <p>Plongez dans le monde l'analysee de donnees avec python,SQL et Tableau.</p>
+                    <a href="#" class="btn">S'inscrire</a>
+                </li>
+            </u1>
+        </section>
+        <section class="registration-form">
+            <h2>Inscrivez-vous maintenant</h2>
+            <img src="subscribe.jpg" alt="suite">
+            <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="course">Formation:</label>
+                <select id="course" name="course" required>
+                    <option value="">Selectionnez une formation</option>
+                    <option value="Web-development">Developpement Web</option>
+                    <option value="python-programming">Programmation Python</option>
+                    <option value="data-analysis">Analyse De Donnees</option>
+                </select>
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!--pied de page-->
+    </footer>
+    <script>
+        // Eventuellement du java script pour la pae
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet
+    </title>
+    <style>
+        /* variables CSS pour les modes sombres et lumineux */
+        h1 {
+            text-align: center;
+        }
+
+        :root {
+            --bg-color-light: #f0f0f0;
+            --text-color-ligth: #333333;
+            --bg-color-dark: #222222;
+            --text-color-dark: #f0f0f0;
+        }
+
+        .logo {
+            height: 100px;
+            margin-right: 50px;
+
+
+        }
+
+        /* style de base*/
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+            background-image: url(iki.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url(eh\ ah.jpg);
+
+
+        }
+
+        header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /*style pour le mode sombre */
+        body.dark-mode {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        /* style pour le mode lumineux*/
+        body.ligth-mode {
+            background-color: var(--bg-color-light);
+            color: var(--text-color-ligth);
+        }
+
+        /* styles pour le porfolio*/
+        .porfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            display: flex;
+            align-items: normal;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 0;
+        }
+
+        .portfolio-item p {
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* style pour le boutton de mode*/
+        .mode-toggle {
+            transition: background-color 0.3s, color 0.3s;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<heder>
+    <img src="marc.jpg" alt="logo de l'entreprise" class="logo">
+
+    <h1>SINDZE WAFFO MARC DONALD
+    </h1>
+
+    <p style="color: white;">
+    <h2>Bonjour.
+        <h2> Bienvenue sur ma plate forme pour des services et une experience en connaissance informatique </h2>
+        </p>
+    </h2>
+    <hr>
+    <img src="attirance.jpg" alt="suite">
+    <h3>si vous etes............
+        <ol>
+            <li> Apprenti Programmeur......x</li>
+            <li>
+                <h3> Developpeur en web securiter.....x</h3>
+            </li>
+            <li>
+                <h3> A la recherche des idees de Programmation.....x </h3>
+            </li>
+            <li>
+                <h3> A la recherche d'un stage avec options d'embauche...... x</h3>
+            </li>
+        </ol>
+        <img src="waff.jpg" alt="suite">
+        ! Pas de panique vous etes au bon endroit ici chez<h2>MC-DO ET FILS</h2>nous vous offrons
+        des opportuniter en exclusiviter. Profiter de l'experience..
+    </h3>
+    <hr>
+    <h2> nous vous vous proposons deux de nos projet en cours de realisation.... </h2>
+    </p>
+</heder>
+
+<body class="ligth-mode">
+    <div class="container">
+        <button class="mode-toggle">Mode sombre</button>
+        <button class="mode-toggle" arial-label="basculer entre le mode sombre et lumineux">
+            Mode sombre
+        </button>
+        <div class="portfolio-item">
+
+            <div>
+                <h1>projet 1</h1>
+                <h2>
+                    <p>Hello! je me prenom Marc Donald de nationaliter camerounaise je suis programmeur et developpeur
+                        en informatique et ici je
+                        propose des projet qui pourront revolutionner la technologie autour de notre quotidient.
+                        l'un de ces projet est la maison intelligente. La maison intelligente est un projet deja
+                        utiliser dans des
+                        pays ayant un niveau de technologie avancer mais en afrique cela n'est pas encore le cas
+                        cest un projet a long terme qui nous permetra de gerer notre quotidient a la maison tout en
+                        assurant la securiter
+                        de la totaliter de la maison .
+                </h2>
+                </p>
+                <img src="domaine.png" alt="suite">
+                <img src="Smart-Home-2-1.jpg" alt="projet1">
+                <a href="#">voir le projet</a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <hr>
+
+            <div>
+                <h1>projet 2</h1>
+                <h2>
+                    <p>Ici il s'agit d'un deuxieme projet qui est tout autant attrayant que le premier il s'agit ici
+                        de simuler un bot virtuelle qui nous aide dans notre quotidient et qui est adapter a
+                        n'importe quelle surface numerique que nous utilisons(ordinateur,tablette , smart-phone etc...)
+                        Ce bot aura access a notre santer vue qu'il sera inter-connecter a notre poux du poignet grace a
+                        un
+                        bracelet electronique , en cas d'iregulation dans notre santer , ce dernier envera un signal
+                        d'alerte
+                        dependent du niveau de malaise
+                        . palu : il proposera des medicaments adequat pour cette maladie
+                        . simple fievre :proposera des solution et un bilans de santer complet ainsi que la raison de
+                        l'evanouissement
+                        . fatigue : vous proposera une solution pour evacuer la fatigue.
+
+                        et au quottidients vous donnera des astuces pour mieux vous porter et pour gerer votre taut de
+                        glycemie
+                </h2>
+                </p>
+                <img src="images.jpg" alt="projet2">
+                <img src="assistant-virtuel-hopital-EHPAD.jpg" alt="projet 2">
+                <a href="#">voir le projet</a>
+            </div>
+        </div>
+        <hr>
+        <section class="training-section">
+            <h1>Formation en Programation</h1>
+            <div class="training-content">
+                <div class="training-item">
+
+                    <h2> Developpement Web</h2>
+                    <p>
+                    <h2>Je propose aussi une formation dans le developpement Web avec du HTML, CSS, et JAVA
+                        SCRIPT.Creez des sites webs modernes et reactif.......
+                    </h2>
+                    </p>
+                    <img src="images (1).jpg" alt="Web Development">
+                    <img src="images (2).jpg" alt="projet de web developpement">
+
+                    <a href="training-programs.html" class="btn">https://inscrit toi.com</a>
+                </div>
+                <hr>
+                <div class="training-item">
+                    <img src="téléchargement (1).jpg" alt="python-programming">
+                    <h2>Programmation Python</h2>
+                    <p>Decouvrex la puissance du langage python.Apprenez a creer des applications et des scripts
+                        automatiques.</p>
+                    <a href="#" class="btn">En savoir plus</a>
+                </div>
+                <div class="training-item">
+                    <img src="data analysis.jpg" alt="Data Analysis">
+                    <h2>Analyses De Donnee</h2>
+                    <p>Plongez dans le monde de l'analyse de donnes avec des outils comme python, SQL et Tableau.</p>
+                    <a href="#" class="btn">En savoir plus....</a>
+                </div>
+            </div>
+        </section>
+        <!--Ajouter d'autre element de portfolio ici-->
+    </div>
+    <hr>
+    <div>
+
+        <h1>participation au projet</h1>
+        <h2>
+            <p>Nous vous offrons aussi l'opportuniter de nous faire part de vos idee et de participer
+                a nos projet de developpement. chez MC-DO aucune idee n'est mise a lecart joigner nous
+                sur nos differentes plate-formes pour en savoir plus.....
+        </h2>
+        </p>
+        <img src="kombi.jpg" alt="Data Analysis">
+
+        <script src="./index.js">
+            // Basculer entre les modes sombres et lumineux
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon port folio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <img src="media/donald.JPG" alt="photo de profil">
+        <p> SINDZE WAFFO MARC DONALD</p>
+        <button id="theme-toggle">Mode Sombre</button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="apropos de nous/about.html">A propos de nous</a>
+                </li>
+
+                <li> <a href="mcdo cv.pdf" class="cv-btn" download>mon CV</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+        <section class="content">
+            <h1>Bienvenue dans mon port folio</h1>
+            <p>
+            <h2>HELLO je me pronemme SINDZE WAFFO MARC DONALD et je suis expert en programmation front-end , et
+                jai des resources en programmation back-end
+                . Jai participer a de nombres projet comme preciser dans la partie EXPERINCE
+                de mon portfolio et jai des projet a long terme qui sont en cours .
+                decouvrez mon port folio et mes formations en programmation et cliquer sur le liens ci-decu si vous
+                etes interresser pars ces projet</h2>
+            </p>
+            <a href="projet/formulaire/index2.html">Mes projets</a>
+        </section>
+        <div class="sidebar-image">
+            <img src="media/attirance.jpg" alt="Image de droite">
+        </div>
+    </div>
+    <main>
+
+        <div class="skill">
+            <h1>Langage de programmation que je maitrise</h1>
+            <p>
+                je suis a l'aise avec les langage suivants
+            </p>
+
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JAVASRIPT</li>
+                <li>PYTHON</li>
+                <li>java</li>
+                <li>C++</li>
+            </ul>
+        </div>
+        <div class="skill">
+            <h1>Mes experiences </h1>
+            <p>jai travailler sur plusieurs projets passionnants , notamment:</p>
+            <ul>
+                <li>Developpement d'une application web responsive </li>
+                <li>creation d'un jeu en 2D avec JAVASRIPT </li>
+                <li>participation a un projet de machine learning en python </li>
+            </ul>
+        </div>
+        <section class="formation">
+            <h1>Formation en Programmation</h1>
+            <div class="formation-container">
+                <div class="formation-item">
+                    <img src="media/dev web.jpg" alt="Formation 1">
+                    <h2>Developpement Web</h2>
+                    <p>
+                        Apprenez les bases du developpement web avec HTML,CSS et JAVASCRIPT
+                    </p>
+
+                </div>
+                <div class="formation-item">
+                    <img src="media/data analysis.jpg" alt="Formation 2">
+
+                    <h1>python pour la data</h1>
+                    <p>Decouvrez les techniques d'analyses de donnees avec python.</p>
+                    <div class="formation-item">
+                        <img src="media/doni.jpg" alt="Formation 3">
+                        <h2>Programmation Orientee Objet</h2>
+                        <p>
+                            Maitrisez les concepts de la programation orienter objet
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="formation-item">
+                    <img src="data analysis.jpg" alt="Formation 4">
+                    <h3></h3>
+                    <p>Decouvrez les techniques d'analyses de donnees avec python.</p>
+                    <div class="formation-item">-->
+
+        </section>
+        <section id="portfolio">
+            <h2>Telecharger mon portfolio</h2>
+            <p>cliquez sur le boutton ci-dessous pour telecharger Mon
+                portfolio au format PDF
+            </p>
+            <a href="portfolio.pdf" class="download-btn" download>Telecharger le portfolio
+
+            </a>
+        </section>
+        <div class="contact">
+            <h3>Me contacter</h3>
+            <a href="https://wa.me/+237683509250">watsapp</a>
+            <img src="media/watsapp.JPG" alt="watsapp" width="30" heigth="30">
+            <a href="https://twitter.com/@SindzeD56677">Twitter</a>
+            <img src="media/twitter.JPG" alt="Twitter" width="30" heigth="30">
+            <a href="https://www.instagram.com/its_mcdo.2">Instagram</a>
+            <img src="media/instagram.JPG" alt="instagram" width="30" heigth="30">
+            <a href="https://tiktok.com/@toxic_boy323">Tiktok</a>
+            <img src="media/tiktok.JPG" alt="tiktok" width="30" heigth="30">
+        </div>
+    </main>
+    <script>
+        //javascript
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        // verifier le theme actuelle et met a jour le boutton
+        function updateThemeButton() {
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = 'Mode clair';
+            } else {
+                themeToggle.textContent = 'Mode sombre';
+            }
+        }
+        //bascule entre le mode sombre et clair
+        function toggleTheme() {
+            body.classList.toggle('dark-mode');
+            updateThemeButton();
+        }
+        // Ajouter un ecouteur d'evenement sur le boutton
+        themeToggle.addEventListener('click', toggleTheme);
+        //Initialise le theme au chargement de la page
+        updateThemeButton();
+
+    </script>
+</body>
+
+</html>
